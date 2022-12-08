@@ -1,11 +1,19 @@
 import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NavMenu from "./components/NavMenu";
+import Home from "./pages/Home";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <h1>Blog App</h1>
+      <BrowserRouter>
+        <NavMenu />
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
-}
+};
 
 export default App;
