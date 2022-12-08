@@ -1,2 +1,0 @@
-# blog
-Django/React app

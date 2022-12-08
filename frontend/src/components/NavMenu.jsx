@@ -2,7 +2,7 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 
 const NavMenu = () => {
   return (
-    <Navbar bg="light" expand="lg" sticky="top">
+    <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
       <Container>
         <Navbar.Brand href="/">Blog App</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
