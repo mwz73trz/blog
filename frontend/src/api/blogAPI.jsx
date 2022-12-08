@@ -18,4 +18,8 @@ blogAPI.getAllPosts = async () => {
   return await tryCatchFetch(() => axios.get(`${BASE_URL}posts/`));
 };
 
+blogAPI.deletePost = async (postId) => {
+  return await tryCatchFetch(() => axios.delete(`${BASE_URL}posts/${postId}/`));
+};
+
 export default blogAPI;
